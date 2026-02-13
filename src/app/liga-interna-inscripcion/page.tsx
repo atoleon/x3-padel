@@ -1,14 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const inscripciones = [
-  { jugadorA: "Carlos García", jugadorB: "Miguel Torres" },
-  { jugadorA: "David López", jugadorB: "Andrés Martín" },
-  { jugadorA: "Pablo Ruiz", jugadorB: "Javier Sánchez" },
-  { jugadorA: "Alberto Díaz", jugadorB: "Fernando Moreno" },
-  { jugadorA: "Sergio Navarro", jugadorB: "Raúl Jiménez" },
-  { jugadorA: "Luis Romero", jugadorB: "Óscar Herrera" },
-];
+import { inscripciones } from "@/content";
 
 export default function LigaInternaInscripcion() {
   return (

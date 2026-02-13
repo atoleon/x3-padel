@@ -18,7 +18,7 @@ const galleryItems = [
   },
   {
     label: "Equipo Femenino",
-    classes: "span-2-col",
+    classes: "span-2-col span-2-row",
     img: "/fotos_x3/femenino.jpeg",
   },
 ];
