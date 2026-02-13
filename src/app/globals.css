@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -31,7 +31,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -64,7 +69,8 @@ button {
   font-family: inherit;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: inherit;
 }
 
@@ -75,7 +81,9 @@ input, textarea {
   left: 0;
   right: 0;
   z-index: 100;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
 }
 .navbar.scrolled {
   background: rgba(13, 16, 48, 0.95);
@@ -142,13 +150,23 @@ input, textarea {
 }
 
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .mobile-toggle { display: block; }
-  .navbar .inner { height: 56px; }
+  .nav-links {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  .navbar .inner {
+    height: 56px;
+  }
 }
 @media (min-width: 769px) {
-  .navbar .inner { height: 72px; }
-  .navbar .logo-img { height: 48px; }
+  .navbar .inner {
+    height: 72px;
+  }
+  .navbar .logo-img {
+    height: 48px;
+  }
 }
 
 /* ===== HERO ===== */
@@ -188,10 +206,30 @@ input, textarea {
   position: absolute;
   background: var(--red);
 }
-.hero .lines .l1 { top: 80px; left: 40px; width: 1px; height: 160px; }
-.hero .lines .l2 { top: 128px; left: 40px; width: 80px; height: 1px; }
-.hero .lines .l3 { bottom: 80px; right: 40px; width: 1px; height: 160px; }
-.hero .lines .l4 { bottom: 128px; right: 40px; width: 80px; height: 1px; }
+.hero .lines .l1 {
+  top: 80px;
+  left: 40px;
+  width: 1px;
+  height: 160px;
+}
+.hero .lines .l2 {
+  top: 128px;
+  left: 40px;
+  width: 80px;
+  height: 1px;
+}
+.hero .lines .l3 {
+  bottom: 80px;
+  right: 40px;
+  width: 1px;
+  height: 160px;
+}
+.hero .lines .l4 {
+  bottom: 128px;
+  right: 40px;
+  width: 80px;
+  height: 1px;
+}
 .hero .content {
   position: relative;
   z-index: 10;
@@ -199,7 +237,8 @@ input, textarea {
 }
 .hero .hero-logo {
   width: 128px;
-  height: 128px;
+  height: auto !important;
+  aspect-ratio: auto;
   margin: 0 auto 1.5rem;
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
   animation: fadeScaleIn 0.6s ease-out both;
@@ -211,7 +250,9 @@ input, textarea {
   margin-bottom: 0.25rem;
   animation: fadeUp 0.6s 0.2s ease-out both;
 }
-.hero h1 span { color: var(--red); }
+.hero h1 span {
+  color: var(--red);
+}
 .hero .divider {
   width: 96px;
   height: 4px;
@@ -238,7 +279,9 @@ input, textarea {
   letter-spacing: 0.1em;
   padding: 1rem 2.5rem;
   transform: skewX(-4deg);
-  transition: background 0.3s, transform 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s;
   animation: fadeUp 0.5s 0.6s ease-out both;
 }
 .hero .cta:hover {
@@ -272,13 +315,25 @@ input, textarea {
 }
 
 @media (min-width: 769px) {
-  .hero h1 { font-size: 4.5rem; }
-  .hero .hero-logo { width: 176px; height: 176px; }
-  .hero .tagline { font-size: 1.4rem; }
-  .hero .cta { font-size: 1.25rem; padding: 1rem 3rem; }
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+  .hero .hero-logo {
+    width: 176px;
+    height: auto !important;
+  }
+  .hero .tagline {
+    font-size: 1.4rem;
+  }
+  .hero .cta {
+    font-size: 1.25rem;
+    padding: 1rem 3rem;
+  }
 }
 @media (min-width: 1024px) {
-  .hero h1 { font-size: 6rem; }
+  .hero h1 {
+    font-size: 6rem;
+  }
 }
 
 /* ===== ABOUT ===== */
@@ -314,7 +369,9 @@ input, textarea {
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
-.about h2 span { color: var(--red); }
+.about h2 span {
+  color: var(--red);
+}
 .about .desc {
   color: var(--gray);
   margin-bottom: 1rem;
@@ -333,7 +390,9 @@ input, textarea {
   overflow: hidden;
   transition: transform 0.3s;
 }
-.about .stat-card:hover { transform: translateY(-4px); }
+.about .stat-card:hover {
+  transform: translateY(-4px);
+}
 .about .stat-card .top-bar {
   position: absolute;
   top: 0;
@@ -345,7 +404,9 @@ input, textarea {
   transition: transform 0.3s;
   transform-origin: left;
 }
-.about .stat-card:hover .top-bar { transform: scaleX(1); }
+.about .stat-card:hover .top-bar {
+  transform: scaleX(1);
+}
 .about .stat-icon {
   margin: 0 auto 0.75rem;
   color: var(--red);
@@ -365,9 +426,15 @@ input, textarea {
 }
 
 @media (min-width: 769px) {
-  .about { padding: 7rem 0; }
-  .about .grid { grid-template-columns: 1fr 1fr; }
-  .about h2 { font-size: 3rem; }
+  .about {
+    padding: 7rem 0;
+  }
+  .about .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about h2 {
+    font-size: 3rem;
+  }
 }
 
 /* ===== TEAM ===== */
@@ -403,8 +470,12 @@ input, textarea {
   font-weight: 700;
   color: white;
 }
-.section-header h2 span { color: var(--red); }
-.section-header.dark h2 { color: var(--fg); }
+.section-header h2 span {
+  color: var(--red);
+}
+.section-header.dark h2 {
+  color: var(--fg);
+}
 
 .team .players-grid {
   display: grid;
@@ -417,7 +488,9 @@ input, textarea {
   overflow: hidden;
   transition: border-color 0.3s;
 }
-.player-card:hover { border-color: rgba(196, 30, 42, 0.5); }
+.player-card:hover {
+  border-color: rgba(196, 30, 42, 0.5);
+}
 .player-card .avatar-area {
   height: 192px;
   background: linear-gradient(135deg, var(--navy), var(--navy-deep));
@@ -454,7 +527,9 @@ input, textarea {
   display: inline-block;
   transform: skewX(4deg);
 }
-.player-card .info { padding: 1.25rem; }
+.player-card .info {
+  padding: 1.25rem;
+}
 .player-card .info h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
@@ -496,10 +571,14 @@ input, textarea {
 }
 
 @media (min-width: 640px) {
-  .team .players-grid { grid-template-columns: repeat(2, 1fr); }
+  .team .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1024px) {
-  .team .players-grid { grid-template-columns: repeat(3, 1fr); }
+  .team .players-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ===== TOURNAMENTS ===== */
@@ -523,14 +602,18 @@ input, textarea {
   background: white;
   transition: background 0.3s;
 }
-.tournament-card:hover { background: var(--muted-bg); }
+.tournament-card:hover {
+  background: var(--muted-bg);
+}
 .tournament-card h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   transition: color 0.3s;
 }
-.tournament-card:hover h3 { color: var(--red); }
+.tournament-card:hover h3 {
+  color: var(--red);
+}
 .tournament-card .meta {
   display: flex;
   flex-wrap: wrap;
@@ -554,8 +637,12 @@ input, textarea {
   height: 8px;
   border-radius: 50%;
 }
-.status-dot.green { background: #22c55e; }
-.status-dot.yellow { background: #eab308; }
+.status-dot.green {
+  background: #22c55e;
+}
+.status-dot.yellow {
+  background: #eab308;
+}
 .tournament-card .status-text {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 0.8rem;
@@ -613,7 +700,9 @@ input, textarea {
   justify-content: center;
   transition: background 0.3s;
 }
-.gallery-item:hover .overlay { background: rgba(196, 30, 42, 0.7); }
+.gallery-item:hover .overlay {
+  background: rgba(196, 30, 42, 0.7);
+}
 .gallery-item .overlay span {
   font-family: "Oswald", sans-serif;
   color: white;
@@ -626,11 +715,17 @@ input, textarea {
   opacity: 1;
   transform: translateY(0);
 }
-.gallery-item.span-2-col { grid-column: span 2; }
-.gallery-item.span-2-row { grid-row: span 2; }
+.gallery-item.span-2-col {
+  grid-column: span 2;
+}
+.gallery-item.span-2-row {
+  grid-row: span 2;
+}
 
 @media (min-width: 769px) {
-  .gallery .grid { grid-template-columns: repeat(4, 1fr); }
+  .gallery .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* ===== CONTACT ===== */
@@ -664,7 +759,9 @@ input, textarea {
   transition: border-color 0.3s;
 }
 .contact input:focus,
-.contact textarea:focus { border-color: var(--red); }
+.contact textarea:focus {
+  border-color: var(--red);
+}
 .contact textarea {
   resize: vertical;
   min-height: 120px;
@@ -679,7 +776,9 @@ input, textarea {
   letter-spacing: 0.1em;
   padding: 1rem;
   transform: skewX(-4deg);
-  transition: background 0.3s, transform 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s;
 }
 .contact .submit-btn:hover {
   background: var(--red-light);
@@ -720,7 +819,9 @@ input, textarea {
   justify-content: center;
   transition: background 0.3s;
 }
-.contact .social-link:hover { background: var(--red); }
+.contact .social-link:hover {
+  background: var(--red);
+}
 .contact .map-placeholder {
   height: 192px;
   background: var(--muted-bg);
@@ -736,7 +837,9 @@ input, textarea {
 }
 
 @media (min-width: 769px) {
-  .contact .grid { grid-template-columns: 1fr 1fr; }
+  .contact .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ===== FOOTER ===== */
@@ -780,7 +883,9 @@ input, textarea {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.3s;
 }
-.footer .footer-links a:hover { color: var(--red); }
+.footer .footer-links a:hover {
+  color: var(--red);
+}
 .footer .footer-socials {
   display: flex;
   gap: 0.75rem;
@@ -789,7 +894,9 @@ input, textarea {
   color: rgba(255, 255, 255, 0.4);
   transition: color 0.3s;
 }
-.footer .footer-socials a:hover { color: var(--red); }
+.footer .footer-socials a:hover {
+  color: var(--red);
+}
 .footer .copyright {
   margin-top: 2rem;
   padding-top: 1.5rem;
@@ -809,41 +916,211 @@ input, textarea {
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeScaleIn {
-  from { opacity: 0; transform: scale(0.5); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes scaleIn {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(10px); }
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .fade-in-left {
   opacity: 0;
   transform: translateX(-40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
-.fade-in-left.visible { opacity: 1; transform: translateX(0); }
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 .fade-in-right {
   opacity: 0;
   transform: translateX(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
-.fade-in-right.visible { opacity: 1; transform: translateX(0); }
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .form-group {
   margin-bottom: 1.25rem;
+}
+
+/* ===== LIGA INTERNA INSCRIPCIÓN ===== */
+.liga-inscripcion {
+  position: relative;
+  min-height: 100vh;
+  background: var(--navy-deep);
+  padding: 8rem 0 5rem;
+  overflow: hidden;
+}
+.liga-inscripcion .accent-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(196, 30, 42, 0.06);
+  transform: skewX(-12deg) translateX(25%);
+}
+.liga-inscripcion .lines {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+}
+.liga-inscripcion .lines div {
+  position: absolute;
+  background: var(--red);
+}
+.liga-inscripcion .lines .l1 {
+  top: 80px;
+  left: 40px;
+  width: 1px;
+  height: 160px;
+}
+.liga-inscripcion .lines .l2 {
+  top: 128px;
+  left: 40px;
+  width: 80px;
+  height: 1px;
+}
+.liga-inscripcion .lines .l3 {
+  bottom: 80px;
+  right: 40px;
+  width: 1px;
+  height: 160px;
+}
+.liga-inscripcion .lines .l4 {
+  bottom: 128px;
+  right: 40px;
+  width: 80px;
+  height: 1px;
+}
+
+.liga-inscripcion-content {
+  position: relative;
+  z-index: 10;
+}
+.liga-inscripcion .section-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+.liga-inscripcion .section-header h1 span {
+  color: var(--red);
+}
+.liga-inscripcion .divider {
+  width: 96px;
+  height: 4px;
+  background: var(--red);
+  margin: 1rem auto;
+}
+.liga-inscripcion .liga-sub {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.tabla-wrapper {
+  max-width: 768px;
+  margin: 3rem auto 0;
+}
+.tabla-inscripcion {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabla-inscripcion thead th {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: white;
+  background: var(--navy);
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 3px solid var(--red);
+}
+.tabla-inscripcion tbody tr {
+  transition: background 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.tabla-inscripcion tbody tr:hover {
+  background: rgba(196, 30, 42, 0.08);
+}
+.tabla-inscripcion tbody td {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.9rem 1.25rem;
+}
+.tabla-inscripcion .col-numero {
+  width: 60px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: var(--red);
+}
+
+@media (min-width: 769px) {
+  .liga-inscripcion .section-header h1 {
+    font-size: 4.5rem;
+  }
+  .liga-inscripcion .liga-sub {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .liga-inscripcion .section-header h1 {
+    font-size: 5rem;
+  }
 }

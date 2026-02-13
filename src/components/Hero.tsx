@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <section className="hero" id="hero">
@@ -12,13 +10,10 @@ export default function Hero() {
         <div className="l4" />
       </div>
       <div className="content">
-        <Image
+        <img
           src="/assets/logo_x3.png"
           alt="X3 Padel Club"
-          width={176}
-          height={176}
           className="hero-logo"
-          priority
         />
         <h1>
           X3 PADEL <span>CLUB</span>
