@@ -1,10 +1,26 @@
 const galleryItems = [
-  { label: "Entrenamiento", classes: "span-2-col span-2-row" },
-  { label: "Torneo Regional", classes: "" },
-  { label: "Celebración", classes: "" },
-  { label: "Equipo Completo", classes: "span-2-col" },
-  { label: "Partido Final", classes: "" },
-  { label: "Preparación", classes: "" },
+  {
+    label: "Americano",
+    classes: "span-2-col span-2-row",
+    img: "/fotos_x3/americano.jpeg",
+  },
+  {
+    label: "Equipo Masculino A",
+    classes: "span-2-col",
+    img: "/fotos_x3/masculino A.jpeg",
+  },
+  { label: "Diego & Mingo", classes: "", img: "/fotos_x3/diego-mingo.jpg" },
+  { label: "Caricatura", classes: "", img: "/fotos_x3/caricatura.jpeg" },
+  {
+    label: "Gosadera",
+    classes: "span-2-col span-2-row",
+    img: "/fotos_x3/gosadera.jpeg",
+  },
+  {
+    label: "Equipo Femenino",
+    classes: "span-2-col",
+    img: "/fotos_x3/femenino.jpeg",
+  },
 ];
 
 export default function Gallery() {
@@ -24,7 +40,17 @@ export default function Gallery() {
               className={`gallery-item fade-in ${item.classes}`}
               style={{ transitionDelay: `${i * 0.08}s` }}
             >
-              <div className="placeholder">Foto</div>
+              <img
+                src={item.img}
+                alt={item.label}
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
               <div className="overlay">
                 <span>{item.label}</span>
               </div>

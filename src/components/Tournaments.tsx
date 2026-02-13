@@ -1,32 +1,32 @@
 const tournaments = [
   {
-    name: "Open Regional de Pádel",
-    date: "15 Mar 2026",
-    location: "Madrid",
-    status: "Inscripción Abierta",
-    color: "green",
-  },
-  {
-    name: "Copa X3 Invitational",
-    date: "28 Abr 2026",
-    location: "Barcelona",
+    name: "Padel x3 Femenino",
+    date: "Por determinar",
+    location: "Por determinar",
     status: "Próximamente",
     color: "yellow",
   },
   {
-    name: "Liga Nacional - Jornada 5",
-    date: "10 May 2026",
-    location: "Valencia",
-    status: "Inscripción Abierta",
-    color: "green",
-  },
-  {
-    name: "Torneo de Verano",
-    date: "20 Jun 2026",
-    location: "Sevilla",
+    name: "Padel x3 Masculino",
+    date: "Por determinar",
+    location: "Por determinar",
     status: "Próximamente",
     color: "yellow",
   },
+  {
+    name: "Padel x3 Masculino B",
+    date: "Por determinar",
+    location: "Por determinar",
+    status: "Próximamente",
+    color: "yellow",
+  },
+  // {
+  //   name: "Torneo de Verano",
+  //   date: "20 Jun 2026",
+  //   location: "Sevilla",
+  //   status: "Próximamente",
+  //   color: "yellow",
+  // },
 ];
 
 export default function Tournaments() {
@@ -34,9 +34,9 @@ export default function Tournaments() {
     <section className="tournaments" id="tournaments">
       <div className="container">
         <div className="section-header dark fade-in">
-          <p className="subtitle">Competición</p>
+          <p className="subtitle">Copa Canaria por Equipos 2026</p>
           <h2 style={{ color: "var(--fg)" }}>
-            CALENDARIO DE <span>TORNEOS</span>
+            CALENDARIO <span>PRÓXIMO ENCUENTRO</span>
           </h2>
         </div>
         <div className="list">

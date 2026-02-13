@@ -10,15 +10,20 @@ export default function About() {
               Más que un <span>club</span>
             </h2>
             <p className="desc">
-              X3 Padel Club nació de la pasión por el pádel y la competición.
-              Somos un equipo unido que compite en los principales torneos
-              regionales y nacionales, representando los valores del esfuerzo, la
-              disciplina y el juego limpio.
+              X3 Pádel es un equipo con mentalidad ganadora, espíritu
+              competitivo y una fuerte cultura de trabajo. Nos exigimos en cada
+              entrenamiento y en cada partido, cuidamos la estrategia, la
+              preparación física y la cohesión dentro de la pista. Competimos
+              con intensidad, respeto y ambición, siempre buscando superarnos y
+              representar nuestros colores con orgullo.
             </p>
             <p className="desc">
-              Nuestro objetivo es formar jugadores de élite y crear una comunidad
-              donde el pádel sea el motor de superación personal y trabajo en
-              equipo. Entrenamos con intensidad, competimos con honor.
+              Pero X3 es mucho más que competición. Creemos que el verdadero
+              espíritu del pádel también se vive fuera de la pista: compartiendo
+              risas, celebrando cada logro y fortaleciendo la amistad que nos
+              une como equipo. Disfrutamos del deporte, del compañerismo y de
+              cada momento juntos, porque para nosotros ganar es importante,
+              pero disfrutar el camino lo es aún más.
             </p>
           </div>
           <div className="stats-grid fade-in-right">
@@ -38,7 +43,7 @@ export default function About() {
                 <line x1="8" y1="2" x2="8" y2="6" />
                 <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
-              <p className="stat-value">5+</p>
+              <p className="stat-value">4+</p>
               <p className="stat-label">Años Activos</p>
             </div>
             <div className="stat-card">
@@ -57,7 +62,7 @@ export default function About() {
                 <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
-              <p className="stat-value">40+</p>
+              <p className="stat-value">70+</p>
               <p className="stat-label">Miembros</p>
             </div>
             <div className="stat-card">
@@ -79,8 +84,8 @@ export default function About() {
                 <path d="M8 6h8" />
                 <path d="M12 6V2" />
               </svg>
-              <p className="stat-value">15+</p>
-              <p className="stat-label">Torneos Ganados</p>
+              <p className="stat-value">3</p>
+              <p className="stat-label">Categorías Distintas</p>
             </div>
           </div>
         </div>

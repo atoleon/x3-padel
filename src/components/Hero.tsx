@@ -19,7 +19,7 @@ export default function Hero() {
           X3 PADEL <span>CLUB</span>
         </h1>
         <div className="divider" />
-        <p className="tagline">Pasión · Competición · Excelencia</p>
+        <p className="tagline">Pasión · Competición · Gosadera</p>
         <a href="#contact" className="cta">
           <span>Únete al equipo</span>
         </a>
