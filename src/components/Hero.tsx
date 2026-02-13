@@ -1,0 +1,37 @@
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <section className="hero" id="hero">
+      <div className="accent-bg" />
+      <div className="gradient-bottom" />
+      <div className="lines">
+        <div className="l1" />
+        <div className="l2" />
+        <div className="l3" />
+        <div className="l4" />
+      </div>
+      <div className="content">
+        <Image
+          src="/assets/logo_x3.png"
+          alt="X3 Padel Club"
+          width={176}
+          height={176}
+          className="hero-logo"
+          priority
+        />
+        <h1>
+          X3 PADEL <span>CLUB</span>
+        </h1>
+        <div className="divider" />
+        <p className="tagline">Pasión · Competición · Excelencia</p>
+        <a href="#contact" className="cta">
+          <span>Únete al equipo</span>
+        </a>
+      </div>
+      <div className="scroll-indicator">
+        <div className="dot" />
+      </div>
+    </section>
+  );
+}
