@@ -4,4 +4,5 @@ export const inscripciones = [
   { jugadorA: "Ayoze (Masculino B)", jugadorB: "Guille (Masculino B)" },
   { jugadorA: "Claudio (Masculino B)", jugadorB: "Pendiente" },
   { jugadorA: "Elías (Masculino B)", jugadorB: "Pendiente" },
+  { jugadorA: "Yonan (Masculino A)", jugadorB: "Pendiente"}
 ];
