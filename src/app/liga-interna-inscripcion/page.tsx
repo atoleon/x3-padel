@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { inscripciones } from "@/content";
+import TablaInscripciones from "@/components/TablaInscripciones";
 
 export default function LigaInternaInscripcion() {
   return (
@@ -28,24 +28,7 @@ export default function LigaInternaInscripcion() {
           </div>
 
           <div className="tabla-wrapper">
-            <table className="tabla-inscripcion">
-              <thead>
-                <tr>
-                  <th className="col-numero">#</th>
-                  <th>Jugador A</th>
-                  <th>Jugador B</th>
-                </tr>
-              </thead>
-              <tbody>
-                {inscripciones.map((pareja, i) => (
-                  <tr key={i}>
-                    <td className="col-numero">{i + 1}</td>
-                    <td>{pareja.jugadorA}</td>
-                    <td>{pareja.jugadorB}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <TablaInscripciones />
           </div>
         </div>
       </section>
