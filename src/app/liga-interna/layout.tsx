@@ -1,8 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import TablaInscripciones from "@/components/TablaInscripciones";
 
-export default function LigaInternaInscripcion() {
+export default function LigaInternaLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <Navbar />
@@ -27,9 +30,7 @@ export default function LigaInternaInscripcion() {
             </h2>
           </div>
 
-          <div className="tabla-wrapper">
-            <TablaInscripciones />
-          </div>
+          {children}
         </div>
       </section>
       <Footer />

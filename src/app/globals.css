@@ -1111,12 +1111,189 @@ textarea {
   color: var(--red);
 }
 
+/* ===== PARTIDOS ===== */
+.partidos-wrapper {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.turno-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.turno-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.turno-hora {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--red);
+  background: var(--navy);
+  padding: 0.4rem 1rem;
+  transform: skewX(-4deg);
+}
+.turno-label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.partidos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.match-card {
+  background: var(--navy);
+  border: 1px solid var(--gray);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.match-card:hover {
+  border-color: rgba(196, 30, 42, 0.4);
+}
+.match-number {
+  background: linear-gradient(to right, var(--navy-deep), var(--red));
+  padding: 0.5rem 1rem;
+}
+.match-number span {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: white;
+}
+.match-teams {
+  background: linear-gradient(to right, var(--navy), var(--navy-deep));
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  gap: 1rem;
+}
+.match-team {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.match-team:last-child {
+  text-align: right;
+}
+.team-player {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+/* ===== MATCH INFO CARD ===== */
+.match-info-card {
+  background: var(--navy);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.match-info-card:hover {
+  border-color: rgba(196, 30, 42, 0.4);
+}
+.match-info-header {
+  background: var(--red);
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.match-info-date,
+.match-info-time,
+.match-info-court {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: white;
+}
+.match-info-time {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.match-info-court {
+  margin-left: auto;
+  opacity: 0.85;
+}
+.match-info-body {
+  display: flex;
+  align-items: stretch;
+  padding: 1.25rem;
+  gap: 1.25rem;
+}
+.match-info-teams {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.match-info-team {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.match-info-team span {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.match-info-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.match-info-scores {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.match-info-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 28px;
+}
+.match-info-set span {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1;
+}
+.match-info-set span.set-winner {
+  color: var(--red);
+}
+
+@media (min-width: 640px) {
+  .partidos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 769px) {
   .liga-inscripcion .section-header h1 {
     font-size: 4.5rem;
   }
   .liga-inscripcion .liga-sub {
     font-size: 1.5rem;
+  }
+  .turno-hora {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 1024px) {
