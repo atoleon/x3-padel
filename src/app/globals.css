@@ -1257,24 +1257,22 @@ textarea {
   background: rgba(255, 255, 255, 0.1);
 }
 .match-info-scores {
+  flex: 1;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-shrink: 0;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 .match-info-set {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  min-width: 28px;
+  flex: 1;
 }
 .match-info-set span {
+  width: 50%;
+  text-align: center;
   font-family: "Oswald", sans-serif;
-  font-size: 1.1rem;
+  font-size: 2em;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.4);
-  line-height: 1;
 }
 .match-info-set span.set-winner {
   color: var(--red);
