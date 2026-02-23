@@ -20,7 +20,6 @@ export interface MatchData {
 
 export default function MatchInfoCard({ match }: { match: MatchData }) {
   const sets = [match.result["1"], match.result["2"], match.result["3"]];
-  console.log(sets);
 
   return (
     <div className="match-info-card">
@@ -44,15 +43,27 @@ export default function MatchInfoCard({ match }: { match: MatchData }) {
         </div>
         <div className="match-info-scores">
           <div className="match-info-set">
-            <span>{sets[0][0]}</span>
-            <span>{sets[1][0]}</span>
-            <span>{sets[2][0]}</span>
+            <span className={sets[0][0] > sets[0][1] ? "set-winner" : ""}>
+              {sets[0][0]}
+            </span>
+            <span className={sets[1][0] > sets[1][1] ? "set-winner" : ""}>
+              {sets[1][0]}
+            </span>
+            <span className={sets[2][0] > sets[2][1] ? "set-winner" : ""}>
+              {sets[2][0]}
+            </span>
           </div>
           <div className="match-info-divider" />
           <div className="match-info-set">
-            <span>{sets[0][1]}</span>
-            <span>{sets[1][1]}</span>
-            <span>{sets[2][1]}</span>
+            <span className={sets[0][0] < sets[0][1] ? "set-winner" : ""}>
+              {sets[0][1]}
+            </span>
+            <span className={sets[1][0] < sets[1][1] ? "set-winner" : ""}>
+              {sets[1][1]}
+            </span>
+            <span className={sets[2][0] < sets[2][1] ? "set-winner" : ""}>
+              {sets[2][1]}
+            </span>
           </div>
         </div>
       </div>
