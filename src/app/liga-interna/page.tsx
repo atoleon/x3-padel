@@ -1,9 +1,9 @@
-import TablaInscripciones from "@/components/TablaInscripciones";
+import TablaClasificacion from "@/components/TablaClasificacion";
 
-export default function LigaInternaInscripcion() {
+export default function LigaInternaPage() {
   return (
     <div className="tabla-wrapper">
-      <TablaInscripciones />
+      <TablaClasificacion />
     </div>
   );
 }

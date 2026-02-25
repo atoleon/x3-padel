@@ -26,7 +26,7 @@ export default function LigaInternaLayout({
             </h1>
             <div className="divider" />
             <h2 className="liga-sub">
-              Inscripción Jornada 1 - 20 Febrero 2026
+              Inscripción Jornada 2 - 6 de Marzo 2026
             </h2>
           </div>
 

@@ -1110,6 +1110,25 @@ textarea {
   font-weight: 700;
   color: var(--red);
 }
+.tabla-inscripcion .col-stat {
+  width: 52px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.tabla-inscripcion .col-pts {
+  color: var(--red);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.tabla-inscripcion tbody tr.row-lider {
+  background: rgba(196, 30, 42, 0.07);
+  border-left: 3px solid var(--red);
+}
+.tabla-inscripcion tbody tr.row-lider .col-numero {
+  color: white;
+  font-size: 1.1rem;
+}
 
 /* ===== PARTIDOS ===== */
 .partidos-wrapper {
