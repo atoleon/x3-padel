@@ -15,32 +15,34 @@
   --border: #d4d6e0;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: "Barlow", sans-serif;
-  color: var(--fg);
-  background: var(--bg);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
+  body {
+    font-family: "Barlow", sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+  }
 }
 
 .font-condensed {
@@ -454,7 +456,6 @@ textarea {
 }
 .section-header {
   text-align: center;
-  margin-bottom: 3.5rem;
 }
 .section-header .subtitle {
   font-family: "Barlow Condensed", sans-serif;
@@ -1072,7 +1073,7 @@ textarea {
 
 .tabla-wrapper {
   max-width: 768px;
-  margin: 3rem auto 0;
+  margin: 1rem auto 0;
 }
 .tabla-inscripcion {
   width: 100%;

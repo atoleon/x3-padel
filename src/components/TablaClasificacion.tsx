@@ -47,8 +47,6 @@ export default function TablaClasificacion() {
   if (rows.length === 0)
     return <p className="tabla-estado">No hay datos disponibles.</p>;
 
-  console.log(rows);
-
   return (
     <table className="tabla-inscripcion tabla-clasificacion">
       <thead>

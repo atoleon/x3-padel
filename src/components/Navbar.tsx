@@ -4,14 +4,27 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const navItems = [
+// Define navigation items for home and app contexts
+const homeItems = [
   { label: "Inicio", href: "#hero" },
   { label: "Sobre Nosotros", href: "#about" },
   { label: "Equipo", href: "#team" },
   { label: "Torneos", href: "#tournaments" },
   { label: "Galería", href: "#gallery" },
   { label: "Contacto", href: "#contact" },
+  { label: "Liga Interna", href: "liga-interna" },
 ];
+
+// For simplicity, appItems is the same as homeItems but could be different if needed
+const appItems = [
+  { label: "Inicio", href: "/" },
+  { label: "Sobre Liga Interna", href: "/liga-interna" },
+];
+
+const navItems =
+  typeof window !== "undefined" && window.location.pathname === "/"
+    ? homeItems
+    : appItems;
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +36,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    if (href.indexOf("#") !== 0) return;
     e.preventDefault();
     const target = document.querySelector(href);
     if (target) target.scrollIntoView({ behavior: "smooth" });

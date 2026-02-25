@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LigaInternaNav from "@/components/LigaInternaNav";
 
 export default function LigaInternaLayout({
   children,
@@ -28,8 +29,8 @@ export default function LigaInternaLayout({
             <h2 className="liga-sub">
               Inscripción Jornada 2 - 6 de Marzo 2026
             </h2>
+            <LigaInternaNav />
           </div>
-
           {children}
         </div>
       </section>
