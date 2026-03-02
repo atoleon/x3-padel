@@ -1,23 +1,23 @@
 const tournaments = [
   {
     name: "Padel x3 Femenino",
-    date: "Por determinar",
-    location: "Por determinar",
-    status: "Próximamente",
+    date: "14 Marzo 2026",
+    location: "Club Nautico Playa San Marco",
+    status: "Club Nautico Playa San Marco",
     color: "yellow",
   },
   {
-    name: "Padel x3 Masculino",
-    date: "Por determinar",
-    location: "Por determinar",
-    status: "Próximamente",
+    name: "Padel x3 Masculino A",
+    date: "14 Marzo 2026",
+    location: "Magma Padel",
+    status: "Magma Padel A",
     color: "yellow",
   },
   {
     name: "Padel x3 Masculino B",
-    date: "Por determinar",
-    location: "Por determinar",
-    status: "Próximamente",
+    date: "14 Marzo 2026",
+    location: "Hípico del Sur",
+    status: "Europadel Granadilla. B",
     color: "yellow",
   },
   // {
