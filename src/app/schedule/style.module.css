@@ -1,0 +1,177 @@
+.page {
+  min-height: 100vh;
+  background: var(--navy-deep);
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.pageHeader {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.pageHeader h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.pageHeader h1 span {
+  color: var(--red);
+}
+
+.pageHeader p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 48px;
+  height: 3px;
+  background: var(--red);
+  margin: 1rem auto 0;
+}
+
+/* ===== JORNADA BLOCK ===== */
+.jornada {
+  margin-bottom: 2.5rem;
+}
+
+.jornadaHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.jornadaBadge {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: white;
+  background: var(--red);
+  padding: 0.35rem 1rem;
+  transform: skewX(-4deg);
+  white-space: nowrap;
+}
+
+.jornadaSeason {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.jornadaLine {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== MATCH ROW ===== */
+.matchList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.matchRow {
+  display: grid;
+  grid-template-columns: 110px 70px 1fr auto 1fr;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--navy);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.85rem 1.25rem;
+  transition: border-color 0.25s;
+}
+
+.matchRow:hover {
+  border-color: rgba(196, 30, 42, 0.35);
+}
+
+.matchDate {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray);
+}
+
+.matchTime {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.matchTeam {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.matchTeamHome {
+  text-align: right;
+}
+
+.matchTeamAway {
+  text-align: left;
+}
+
+.matchVs {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+/* ===== ESTADOS ===== */
+.estado {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.error {
+  color: var(--red);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .matchRow {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .matchTeamHome,
+  .matchTeamAway {
+    text-align: left;
+  }
+
+  .matchVs {
+    display: none;
+  }
+}
