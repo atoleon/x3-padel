@@ -14,8 +14,9 @@ export default function PartidosPage() {
       const { data, error } = await supabase
         .from("matches")
         .select(
-          "id, date, time, court, result, team1:registrations!partner_1(id, player_a, player_b), team2:registrations!partner_2(id, player_a, player_b)"
+          "id, date, time, court, result, team1:registrations!partner_1(id, player_a, player_b), team2:registrations!partner_2(id, player_a, player_b)",
         )
+        .eq("event_id", 3)
         .order("time", { ascending: true });
 
       if (error) {

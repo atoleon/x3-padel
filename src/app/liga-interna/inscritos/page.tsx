@@ -20,6 +20,7 @@ export default function Page() {
       const { data, error } = await supabase
         .from("registrations")
         .select("*")
+        .eq("event_id", 3)
         .order("created_at", { ascending: true });
 
       if (error) {
