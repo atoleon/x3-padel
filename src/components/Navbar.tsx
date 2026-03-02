@@ -12,6 +12,7 @@ const homeItems = [
   { label: "Torneos", href: "#tournaments" },
   { label: "Galería", href: "#gallery" },
   { label: "Contacto", href: "#contact" },
+  { label: "Calendario", href: "schedule" },
   { label: "Liga Interna", href: "liga-interna" },
 ];
 
