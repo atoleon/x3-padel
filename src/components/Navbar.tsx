@@ -19,9 +19,11 @@ const homeItems = [
 // For simplicity, appItems is the same as homeItems but could be different if needed
 const appItems = [
   { label: "Inicio", href: "/" },
-  { label: "Sobre Liga Interna", href: "/liga-interna" },
+  { label: "Calendario", href: "/schedule" },
+  { label: "Liga Interna", href: "/liga-interna" },
 ];
 
+// check if we're on the home page to determine which nav items to show
 const navItems =
   typeof window !== "undefined" && window.location.pathname === "/"
     ? homeItems
