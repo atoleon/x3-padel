@@ -28,9 +28,9 @@ export default function TablaClasificacion() {
         )
         .order("points", { ascending: false })
         .order("sets_f", { ascending: false })
-        //.order("sets_a", { ascending: true })
-        .order("games_f", { ascending: false });
-      //.order("games_a", { ascending: true });
+        .order("sets_a", { ascending: true })
+        .order("games_f", { ascending: false })
+        .order("games_a", { ascending: true });
 
       if (error) {
         setError(error.message);
